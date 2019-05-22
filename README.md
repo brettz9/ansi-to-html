@@ -23,8 +23,8 @@ npm install ansi-to-html
 ## Usage
 
 ```javascript
-var Convert = require('ansi-to-html');
-var convert = new Convert();
+const Convert = require('ansi-to-html');
+const convert = new Convert();
 
 console.log(convert.toHtml('\x1b[30mblack\x1b[37mwhite'));
 
