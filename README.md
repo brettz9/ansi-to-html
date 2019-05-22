@@ -30,7 +30,7 @@ console.log(convert.toHtml('\x1b[30mblack\x1b[37mwhite'));
 
 /*
     prints:
-    <span style="color:#000">black<span style="color:#AAA">white</span></span>
+    <a style="color:#000">black<a style="color:#AAA">white</a></a>
 */
 ```
 
@@ -60,6 +60,8 @@ Options can be be passed to the constructor to customize behaviour.
 **bg** `<CSS color values>`. The default background color used when reset color codes are encountered.
 
 **newline** `true` or `false`. Convert newline characters to `<br/>`.
+
+**space** `true` or `false`. Convert any two sequential spaces to ` &#xa0;` (a space followed by a non-breaking space). You will probably wish to use this with a fixed with font, e.g., `font-family: monospace;`.
 
 **escapeXML** `true` or `false`. Generate HTML/XML entities.
 
