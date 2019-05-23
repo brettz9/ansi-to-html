@@ -71,14 +71,14 @@ describe('ansi to html', function () {
 
         it('renders slow blink', function (done) {
             const text = 'blink: \x1b[5mwhat';
-            const result = 'blink: <a style="animation: blink 1s linear infinite;">what</a>';
+            const result = 'blink: <a style="animation:blink 1s linear infinite;">what</a>';
 
             return test(text, result, done);
         });
 
         it('renders rapid blink', function (done) {
             const text = 'blink: \x1b[6mwhat';
-            const result = 'blink: <a style="animation: blink 0.3s linear infinite;">what</a>';
+            const result = 'blink: <a style="animation:blink 0.3s linear infinite;">what</a>';
 
             return test(text, result, done);
         });
