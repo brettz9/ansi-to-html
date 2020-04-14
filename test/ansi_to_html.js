@@ -77,9 +77,16 @@ describe('ansi to html', function () {
             return test(text, result, done);
         });
 
-        it('renders strikethrough', function (done) {
+        it('renders strikethrough on', function (done) {
             const text = 'strike: \x1b[9mthat';
             const result = 'strike: <a style="text-decoration:line-through;">that</a>';
+
+            return test(text, result, done);
+        });
+
+        it('renders strikethrough off', function (done) {
+            const text = 'strike: \x1b[9mthat\x1b[29m, no';
+            const result = 'strike: <span style="text-decoration:line-through">that<span style="text-decoration:none">, no</span></span>';
 
             return test(text, result, done);
         });
@@ -308,9 +315,16 @@ describe('ansi to html', function () {
             return test(text, result, done);
         });
 
-        it('renders overline', function (done) {
+        it('renders overline on', function (done) {
             const text = '\x1b[53mHello World';
-            const result = '<a style="text-decoration:overline;">Hello World</a>';
+            const result = '<span style="text-decoration:overline">Hello World</span>';
+
+            return test(text, result, done);
+        });
+
+        it('renders overline off', function (done) {
+            const text = '\x1b[53mHello \x1b[55mWorld';
+            const result = '<a style="text-decoration:overline;">Hello <a style="text-decoration:none;">World</a></a>';
 
             return test(text, result, done);
         });
