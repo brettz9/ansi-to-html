@@ -1,5 +1,5 @@
 {
-  "name": "ansi-to-html",
+  "name": "@brettz9/ansi-to-html",
   "version": "0.6.11",
   "description": "Convert ansi escaped text streams to html.",
   "main": "lib/ansi_to_html.js",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rburns/ansi-to-html.git"
+    "url": "https://github.com/brettz9/ansi-to-html.git"
   },
-  "homepage": "https://github.com/rburns/ansi-to-html",
+  "homepage": "https://github.com/brettz9/ansi-to-html",
   "bugs": {
-    "url": "https://github.com/rburns/ansi-to-html/issues"
+    "url": "https://github.com/brettz9/ansi-to-html/issues"
   },
   "keywords": [
     "ansi",

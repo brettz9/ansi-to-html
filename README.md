@@ -1,8 +1,10 @@
 ## Ansi to Html
 
-[![](https://img.shields.io/travis/rburns/ansi-to-html.svg)](https://travis-ci.org/rburns/ansi-to-html/branches)
-[![](https://img.shields.io/npm/v/ansi-to-html.svg)](https://www.npmjs.com/package/ansi-to-html)
-![](https://img.shields.io/npm/dm/ansi-to-html.svg)
+[![](https://img.shields.io/travis/brettz9/ansi-to-html.svg)](https://travis-ci.org/brettz9/ansi-to-html/branches)
+[![](https://img.shields.io/npm/v/@brettz9/ansi-to-html.svg)](https://www.npmjs.com/package/@brettz9/ansi-to-html)
+![](https://img.shields.io/npm/dm/@brettz9/ansi-to-html.svg)
+
+**This is a fork of [ansi-to-html](https://github.com/rburns/ansi-to-html)**
 
 This was originally a port of the ansi to html converter from
 [bcat](https://github.com/rtomayko/bcat/blob/master/lib/bcat/ansi.rb) to
@@ -17,13 +19,13 @@ It has a few additions:
 ## Installation
 
 ```bash
-npm install ansi-to-html
+npm install @brettz9/ansi-to-html
 ```
 
 ## Usage
 
 ```javascript
-const Convert = require('ansi-to-html');
+const Convert = require('@brettz9/ansi-to-html');
 const convert = new Convert();
 
 console.log(convert.toHtml('\x1b[30mblack\x1b[37mwhite'));
