@@ -1,6 +1,9 @@
+'use strict';
+
 const {expect} = require('chai');
 const Filter = require('../lib/ansi_to_html.js');
 
+// eslint-disable-next-line no-redeclare -- Convenient
 function test(text, result, done, opts) {
     if (!opts) {
         opts = {};

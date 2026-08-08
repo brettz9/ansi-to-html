@@ -1,3 +1,5 @@
+'use strict';
+
 const entities = require('entities');
 const defaults = {
     // 3: 'italic', // || 'inverse'
